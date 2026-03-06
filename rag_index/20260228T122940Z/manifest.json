@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-02-28T12:29:58.703206Z",
+  "snapshot_dir": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/data/snapshots/20260228T122940Z",
+  "output_dir": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/rag_index/20260228T122940Z",
+  "embedding_provider": "hash",
+  "embedding_model": "hash-384",
+  "dimension": 384,
+  "counts": {
+    "issues": 20,
+    "comments": 55,
+    "changelog": 25,
+    "chunks": 100,
+    "vectors": 100
+  },
+  "files": {
+    "index": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/rag_index/20260228T122940Z/index.faiss",
+    "metadata": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/rag_index/20260228T122940Z/metadata.jsonl"
+  }
+}

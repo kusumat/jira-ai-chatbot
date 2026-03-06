@@ -1,0 +1,12 @@
+{
+  "last_successful_sync_utc": "2026-02-28T12:29:58.441443+00:00",
+  "last_sync_mode": "full",
+  "last_projects": [
+    "KAN"
+  ],
+  "last_jql": "project in (KAN) ORDER BY updated ASC",
+  "last_snapshot_dir": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/data/snapshots/20260228T122940Z",
+  "last_max_issue_updated_utc": "2026-02-28T12:27:50.995000+00:00",
+  "last_incremental_sync_utc": "2026-02-28T10:09:51.832104+00:00",
+  "last_full_sync_utc": "2026-02-28T12:29:58.441443+00:00"
+}

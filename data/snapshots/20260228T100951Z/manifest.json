@@ -1,0 +1,23 @@
+{
+  "sync_id": "20260228T100951Z",
+  "mode": "incremental",
+  "projects": [
+    "KAN"
+  ],
+  "since_source": "checkpoint",
+  "since_utc": "2026-02-28T10:05:09.709405+00:00",
+  "jql": "project in (KAN) AND updated >= \"2026/02/28 10:05\" ORDER BY updated ASC",
+  "counts": {
+    "issues": 0,
+    "comments": 0,
+    "changelog_items": 0
+  },
+  "files": {
+    "issues": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/data/snapshots/20260228T100951Z/issues.jsonl",
+    "comments": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/data/snapshots/20260228T100951Z/comments.jsonl",
+    "changelog": "/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/data/snapshots/20260228T100951Z/changelog.jsonl"
+  },
+  "started_utc": "2026-02-28T10:09:51.162831+00:00",
+  "completed_utc": "2026-02-28T10:09:51.832104+00:00",
+  "max_issue_updated_utc": null
+}
