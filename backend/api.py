@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 import chatbot_cli as engine
+from .automation import AutoFixRequest, AutoFixResponse, execute_auto_fix_workflow
 
 
 RAG_INDEX_ROOT = Path("/Users/kusumathatavarthi/jira_ai_chatbot_artifacts/rag_index")
@@ -188,3 +189,19 @@ def ask(req: AskRequest) -> AskResponse:
         )
     except Exception as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+@app.post("/auto-fix", response_model=AutoFixResponse)
+async def trigger_auto_fix(req: AutoFixRequest) -> AutoFixResponse:
+    """
+    Trigger automated bug fix workflow.
+    
+    This endpoint:
+    1. Clones the repository
+    2. Analyzes code and issue description
+    3. Generates a fix using the LLM
+    4. Applies the patch to the codebase
+    5. Validates the fix
+    6. Creates a QA branch and commits changes
+    7. Pushes to GitHub
+    """
+    return await execute_auto_fix_workflow(req)
