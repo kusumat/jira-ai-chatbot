@@ -34,4 +34,4 @@ Thumbs.db
 
 # Build outputs
 dist/
-build/
+build/chat.json
